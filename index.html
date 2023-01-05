@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <title>Kapter</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+
+<body>
+   <div class="sidebar">
+      <nav id="sidebar">
+         <div id="dismiss">
+            <i class="fa fa-arrow-left"></i>
+         </div>
+         <ul class="list-unstyled components">
+            <li id="sidebar_top" class="active"> <a href="#banner">Top</a> </li>
+            <li id="sidebar_about"><a href="#about">About </a> </li>
+            <li id="sidebar_functions"><a href="#functions">Functions</a> </li>
+            <li id="sidebar_tech"><a href="#tech">Technology</a> </li>
+            <li id="sidebar_members"><a href="#members">Members </a> </li>
+         </ul>
+      </nav>
+   </div>
+
+   <div class="bg">
+      <div id="banner" class="banner justify-content-end">
+         <header>
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <ul class="btn">
+                           <li class="github_btn"><a href="https://github.com/TranXuanAnh441/socketchat">Github</a></li>
+                           <li class="heroku_btn"><a href="https://iniad-kapter.herokuapp.com/">Heroku</a></li>
+                           <li><button type="button" id="sidebarCollapse">
+                                 <img src="images/menu_icon.png"/>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <div class="text-bg text-right">
+            <div class="waviy">
+               <span style="--i:1">
+                  <h1>K</h1>
+               </span>
+               <span style="--i:2">
+                  <h1>A</h1>
+               </span>
+               <span style="--i:3">
+                  <h1>P</h1>
+               </span>
+               <span style="--i:4">
+                  <h1>T</h1>
+               </span>
+               <span style="--i:5">
+                  <h1>E</h1>
+               </span>
+               <span style="--i:6">
+                  <h1>R</h1>
+               </span>
+            </div>
+            <h3 style="white-space: nowrap">
+               Real time chatting app with extra functions.<br>
+               Send emojis texts, create groups, make friends and more.
+            </h3>
+            <div class="read_more_div">
+               <a class="read_more" href="https://iniad-kapter.herokuapp.com">Try now</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div id="about" class="about reveal fade-left">
+      <div class="container">
+         <div class="d_flex">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>About <span class="blu">Kapter</span></h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="about_content">
+            <div class="about_img"><img src="images/shutterstock_1908020266.jpg"/></div>
+            <!-- </div> -->
+            <div class="about_text">
+               <p>Online chatting website Kapter.
+                  This is the assignment for class INIAD Engineering Exercise IIB in last year.
+                  The website can perform like standard online chatting / social media applications.
+               </p>
+            </div>
+      </div>
+   </div>
+   <div id="functions" class="functions reveal fade-bottom">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>What can you do with <span class="blu">Kapter</span></h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="choose_bg">
+         <div class="container">
+            <div class="choose_content">
+               <div class="choose_options">
+                  <ul class="easy">
+                     <li id="choose_text" class="active"><a>Realtime texting</a></li>
+                     <li id="choose_emoji"><a>Sending emojis</a></li>
+                     <li id="choose_group"><a>Creating groups</a></li>
+                     <li id="choose_friend"><a>Making friends</a></li>
+                  </ul>
+               </div>
+               <div class="choose_box">
+                  <i><img class="choose_box_img" src="images/shutterstock_512720842.jpg" alt="#" /></i>
+                  <h3 class="choose_box_title"> Realtime Texting</h3>
+                  <p class="choose_box_text">Send and receive text at real time without delay.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="tech" class="tech reveal fade-right">
+      <div class="container">
+         <div class="row d_flex">
+            <div class="col-md-4">
+               <div class="titlepage">
+                  <h2>Technology for <span class="blu">Kapter</span></h2>
+               </div>
+            </div>
+            <div class="chart_div col-md-8">
+               <div id="chartdiv"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="members" class="members reveal fade-bottom">
+      <div class="container">
+         <div class="row d_flex">
+            <div class="col-md-6 titlepage">
+               <h2>Members of <span class="blu">Kapter</span></h2>
+            </div>
+            <div class="team-boxed">
+               <div class="container">
+                  <div class="row people">
+                     <div class="col-md-6 col-lg-4 item">
+                        <div class="box flip-card-front"><img class="rounded-circle"
+                              src="images/Default-Profile-Female.jpg">
+                           <h3 class="name">Member 1</h3>
+                           <p class="title">Toyo University Student</p>
+                           <p class="description">Database design, full-stack developer.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-4 item">
+                        <div class="box flip-card-front"><img class="rounded-circle"
+                              src="images/Default-Profile-Female.jpg">
+                           <h3 class="name">Member 2</h3>
+                           <p class="title">Toyo University Student</p>
+                           <p class="description">Main front-end developer</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-4 item">
+                        <div class="box "><img class="rounded-circle" src="images/Default-Profile-Female.jpg">
+                           <h3 class="name">Member 3(Me)</h3>
+                           <p class="title">Toyo University Student</p>
+                           <p class="description">Project Manager, back-end developer and web-hosting.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <footer>
+      <div class="copyright">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <p>Images used in this website is from <a href="https://www.shutterstock.com/ja/">ShutterStock</a> and <a href="https://stock.adobe.com/jp/">AdobeStock</a> </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script type="text/javascript">
+   $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+         theme: "minimal"
+      });
+
+      $('#dismiss, .overlay').on('click', function () {
+         $('#sidebar').removeClass('active');
+         $('.overlay').removeClass('active');
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+         $('#sidebar').addClass('active');
+         $('.overlay').addClass('active');
+         $('.collapse.in').toggleClass('in');
+         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      $('#sidebar_top').on('click', function () {
+         $('#sidebar_top').addClass('active');
+         $('#sidebar_about').removeClass('active');
+         $('#sidebar_functions').removeClass('active');
+         $('#sidebar_tech').removeClass('active');
+         $('#sidebar_members').removeClass('active');
+      });
+      $('#sidebar_about').on('click', function () {
+         $('#sidebar_top').removeClass('active');
+         $('#sidebar_about').addClass('active');
+         $('#sidebar_functions').removeClass('active');
+         $('#sidebar_tech').removeClass('active');
+         $('#sidebar_members').removeClass('active');
+      });
+      $('#sidebar_functions').on('click', function () {
+         $('#sidebar_top').removeClass('active');
+         $('#sidebar_about').removeClass('active');
+         $('#sidebar_functions').addClass('active');
+         $('#sidebar_tech').removeClass('active');
+         $('#sidebar_members').removeClass('active');
+      });
+      $('#sidebar_tech').on('click', function () {
+         $('#sidebar_top').removeClass('active');
+         $('#sidebar_about').removeClass('active');
+         $('#sidebar_functions').removeClass('active');
+         $('#sidebar_tech').addClass('active');
+         $('#sidebar_members').removeClass('active');
+      });
+      $('#sidebar_members').on('click', function () {
+         $('#sidebar_top').removeClass('active');
+         $('#sidebar_about').removeClass('active');
+         $('#sidebar_functions').removeClass('active');
+         $('#sidebar_tech').removeClass('active');
+         $('#sidebar_members').addClass('active');
+      });
+   });
+</script>
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+   am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      var chart = am4core.create("chartdiv", am4charts.PieChart3D);
+      chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+
+      chart.legend = new am4charts.Legend();
+
+      chart.data = [{
+            name: "Django",
+            percentage: 30,
+            description: "high-level Python web framework"
+         },
+         {
+            name: "Heroku",
+            percentage: 5,
+            description: "a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud",
+         },
+         {
+            name: "Github",
+            percentage: 10,
+            description: "code hosting platform for version control and collaboration",
+         },
+         {
+            name: "Socket",
+            percentage: 20,
+            description: "communication between two different processes on the same or different machines",
+         },
+         {
+            name: "jQuery",
+            percentage: 10,
+            description: "lightweight, 'write less, do more', JavaScript library",
+         },
+         {
+            name: "Bootstrap",
+            percentage: 5,
+            description: "front-end development framework for the creation of websites and web apps"
+         },
+         {
+            name: "SQL",
+            percentage: 20,
+            description: "high-performance language used to communicate with databases",
+         },
+      ];
+
+      var series = chart.series.push(new am4charts.PieSeries3D());
+      series.dataFields.value = "percentage";
+      series.dataFields.category = "name";
+      series.slices.template.tooltipText = "{name} : {description}";
+      series.labels.template.text = "{name}";
+   }); // end am4core.ready()
+</script>
+
+<script type="text/javascript">
+   $(document).ready(function () {
+      $('#choose_text').on('click', function () {
+         $('.choose_box_img').attr('src', 'images/shutterstock_512720842.jpg');
+         $('.choose_box_text').text('Send and receive text at real time without delay.');
+         $('.choose_box_title').text('Realtime Texting');
+         $('#choose_emoji').removeClass('active');
+         $('#choose_text').addClass('active');
+         $('#choose_group').removeClass('active');
+         $('#choose_friend').removeClass('active');
+
+      });
+
+      $('#choose_emoji').on('click', function () {
+         $('.choose_box_img').attr('src', 'images/AdobeStock_271432332.jpeg');
+         $('.choose_box_title').text('Sending Emojis');
+         $('.choose_box_text').text('Send files, emojis to make your text more fun.');
+         $('#choose_emoji').addClass('active');
+         $('#choose_text').removeClass('active');
+         $('#choose_group').removeClass('active');
+         $('#choose_friend').removeClass('active');
+      });
+
+      $('#choose_group').on('click', function () {
+         $('.choose_box_img').attr('src', 'images/AdobeStock_440422111.jpeg');
+         $('.choose_box_title').text('Creating Groups');
+         $('.choose_box_text').text('Create and manage group chat with your friends.');
+         $('#choose_emoji').removeClass('active');
+         $('#choose_text').removeClass('active');
+         $('#choose_group').addClass('active');
+         $('#choose_friend').removeClass('active');
+
+      });
+
+      $('#choose_friend').on('click', function () {
+         $('.choose_box_img').attr('src', 'images/AdobeStock_331436731.jpeg');
+         $('.choose_box_title').text('Making Friends');
+         $('.choose_box_text').text('Find and make friends to expand your network.');
+         $('#choose_emoji').removeClass('active');
+         $('#choose_text').removeClass('active');
+         $('#choose_group').removeClass('active');
+         $('#choose_friend').addClass('active');
+      });
+   });
+</script>
+
+
+<script>
+   $(document).ready(function () {
+      window.addEventListener("scroll", function () {
+         var reveals = document.querySelectorAll(".reveal");
+
+         for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 80;
+
+            if (elementTop < windowHeight - elementVisible) {
+               reveals[i].classList.add("active");
+            } else {
+               reveals[i].classList.remove("active");
+            }
+         }
+      });
+   });
+</script>
+
+</html>
