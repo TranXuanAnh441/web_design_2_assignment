@@ -1,8 +1,11 @@
 @media (min-width: 1500px)  {
+    .text-bg {
+        bottom:100px;
+        right:180px;
+    }
     .text-bg h1 {
-        font-size: 200px;
+        font-size: 180px;
         font-weight: bold;
-        right:150px;
     }
     ul.easy li a {
         font-size: 50px;
