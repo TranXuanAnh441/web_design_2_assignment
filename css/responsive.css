@@ -7,6 +7,33 @@
     ul.easy li a {
         font-size: 50px;
     }
+    .about_img {
+        padding-left: 500px;
+        flex-basis: 50%;
+    }
+    .about_text {
+        line-height: 50px;
+        width:500px;
+    }
+    .about {
+        padding-bottom: 300px;
+    }
+    .choose_content {
+        padding-left:0px;
+        padding-right: 300px;
+        padding-bottom: 30px;
+    }
+
+    .choose_box {
+        padding-bottom: 120px;
+        width: 55%;
+    }
+    ul.easy li a {
+        margin-left: 0px;
+        font-size: 25px;
+        padding: 25px 25px;
+        line-height: 25px;
+    }
 }
 
 @media (min-width: 850px) and (max-width: 1199px) {
